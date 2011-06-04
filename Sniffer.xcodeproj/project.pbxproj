@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		AC4A678A12D539ED0051B7B1 /* PrettyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4A678912D539ED0051B7B1 /* PrettyCell.m */; };
+		ACA31FDA12D2CD9400DF2343 /* HexFiend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA31FD912D2CD9400DF2343 /* HexFiend.framework */; };
+		ACA3208312D5340E00DF2343 /* HexFiend.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ACA31FD912D2CD9400DF2343 /* HexFiend.framework */; };
+		D8A2272012C339AF0085FDDE /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8A2271F12C339AF0085FDDE /* Utils.cpp */; };
+		D8A2275612C3BEA80085FDDE /* ChunkedBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8A2275512C3BEA80085FDDE /* ChunkedBuffer.cpp */; };
+		D8A2284212C6D7990085FDDE /* SnifferDocument.mm in Sources */ = {isa = PBXBuildFile; fileRef = D8A2284112C6D7990085FDDE /* SnifferDocument.mm */; };
+		D8A2285B12C6F0040085FDDE /* SnifferWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D8A2285A12C6F0040085FDDE /* SnifferWindowController.mm */; };
+		D8A2286112C6F23D0085FDDE /* SnifferWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8A2286012C6F23D0085FDDE /* SnifferWindowController.xib */; };
+		D8A2292512C716F40085FDDE /* SnifferCapture.mm in Sources */ = {isa = PBXBuildFile; fileRef = D8A2292412C716F40085FDDE /* SnifferCapture.mm */; };
+		D8B4B7EA12C1C018007BE282 /* schema.sql in Resources */ = {isa = PBXBuildFile; fileRef = D8B4B7E912C1C018007BE282 /* schema.sql */; };
+		D8B4B7F412C1C21E007BE282 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B4B7F312C1C21E007BE282 /* libsqlite3.dylib */; };
+		D8E9D0A612BC904000FF3450 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8E9D0A512BC904000FF3450 /* main.cpp */; };
+		D8E9D1D512BD59BC00FF3450 /* libpcap.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E9D1D412BD59BC00FF3450 /* libpcap.A.dylib */; };
+		D8E9D1DE12BD5A1700FF3450 /* CaptureTool in CopyFiles */ = {isa = PBXBuildFile; fileRef = D8E9D09612BC900400FF3450 /* CaptureTool */; };
+		D8E9D22912BD5D3200FF3450 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E9D22712BD5D2C00FF3450 /* CoreFoundation.framework */; };
+		D8E9D22E12BD5D4100FF3450 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E9D22D12BD5D4100FF3450 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8E9D1DA12BD59FB00FF3450 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8E9D09512BC900400FF3450;
+			remoteInfo = Sniffer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ACA3200112D2D48200DF2343 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "Users/zfisher/XCode Projects/Sniffer/HexFiend.framework";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA3202D12D2D4FA00DF2343 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = HexFiend.framework;
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA3203812D2D77600DF2343 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ACA3208312D5340E00DF2343 /* HexFiend.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA3203B12D2DB2100DF2343 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA3208D12D5342D00DF2343 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "Users/zfisher/XCode Projects/Sniffer/HexFiend.framework";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8E9D1F612BD5A2B00FF3450 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				D8E9D1DE12BD5A1700FF3450 /* CaptureTool in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* Sniffer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sniffer_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* Sniffer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sniffer-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Sniffer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sniffer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC4A678812D539ED0051B7B1 /* PrettyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettyCell.h; sourceTree = "<group>"; };
+		AC4A678912D539ED0051B7B1 /* PrettyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrettyCell.m; sourceTree = "<group>"; };
+		ACA31FD912D2CD9400DF2343 /* HexFiend.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HexFiend.framework; sourceTree = "<group>"; };
+		D8A2271E12C339AF0085FDDE /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		D8A2271F12C339AF0085FDDE /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
+		D8A2275412C3BEA80085FDDE /* ChunkedBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChunkedBuffer.h; sourceTree = "<group>"; };
+		D8A2275512C3BEA80085FDDE /* ChunkedBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChunkedBuffer.cpp; sourceTree = "<group>"; };
+		D8A2284012C6D7990085FDDE /* SnifferDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnifferDocument.h; sourceTree = "<group>"; };
+		D8A2284112C6D7990085FDDE /* SnifferDocument.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SnifferDocument.mm; sourceTree = "<group>"; };
+		D8A2284412C6DC420085FDDE /* SpinLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinLock.h; sourceTree = "<group>"; };
+		D8A2285912C6F0040085FDDE /* SnifferWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnifferWindowController.h; sourceTree = "<group>"; };
+		D8A2285A12C6F0040085FDDE /* SnifferWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SnifferWindowController.mm; sourceTree = "<group>"; };
+		D8A2286012C6F23D0085FDDE /* SnifferWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnifferWindowController.xib; sourceTree = "<group>"; };
+		D8A2290612C715D20085FDDE /* DatabaseLocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseLocker.h; sourceTree = "<group>"; };
+		D8A2292312C716F40085FDDE /* SnifferCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnifferCapture.h; sourceTree = "<group>"; };
+		D8A2292412C716F40085FDDE /* SnifferCapture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SnifferCapture.mm; sourceTree = "<group>"; };
+		D8B4B7E912C1C018007BE282 /* schema.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema.sql; sourceTree = "<group>"; };
+		D8B4B7F312C1C21E007BE282 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		D8E9D09612BC900400FF3450 /* CaptureTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CaptureTool; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8E9D0A512BC904000FF3450 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = CaptureTool/main.cpp; sourceTree = "<group>"; };
+		D8E9D1D412BD59BC00FF3450 /* libpcap.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcap.A.dylib; path = usr/lib/libpcap.A.dylib; sourceTree = SDKROOT; };
+		D8E9D22712BD5D2C00FF3450 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D8E9D22D12BD5D4100FF3450 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D8FECD8512BE9A0700AF375F /* VMBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VMBuffer.h; path = CaptureTool/VMBuffer.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				D8E9D22E12BD5D4100FF3450 /* Security.framework in Frameworks */,
+				D8B4B7F412C1C21E007BE282 /* libsqlite3.dylib in Frameworks */,
+				ACA31FDA12D2CD9400DF2343 /* HexFiend.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8E9D09412BC900400FF3450 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8E9D1D512BD59BC00FF3450 /* libpcap.A.dylib in Frameworks */,
+				D8E9D22912BD5D3200FF3450 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D8A2275412C3BEA80085FDDE /* ChunkedBuffer.h */,
+				D8A2275512C3BEA80085FDDE /* ChunkedBuffer.cpp */,
+				D8A2284012C6D7990085FDDE /* SnifferDocument.h */,
+				D8A2284112C6D7990085FDDE /* SnifferDocument.mm */,
+				D8A2284412C6DC420085FDDE /* SpinLock.h */,
+				D8A2285912C6F0040085FDDE /* SnifferWindowController.h */,
+				D8A2285A12C6F0040085FDDE /* SnifferWindowController.mm */,
+				D8A2290612C715D20085FDDE /* DatabaseLocker.h */,
+				D8A2292312C716F40085FDDE /* SnifferCapture.h */,
+				D8A2292412C716F40085FDDE /* SnifferCapture.mm */,
+				AC4A678812D539ED0051B7B1 /* PrettyCell.h */,
+				AC4A678912D539ED0051B7B1 /* PrettyCell.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				D8E9D1D412BD59BC00FF3450 /* libpcap.A.dylib */,
+				D8E9D22712BD5D2C00FF3450 /* CoreFoundation.framework */,
+				D8E9D22D12BD5D4100FF3450 /* Security.framework */,
+				D8B4B7F312C1C21E007BE282 /* libsqlite3.dylib */,
+				ACA31FD912D2CD9400DF2343 /* HexFiend.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Sniffer.app */,
+				D8E9D09612BC900400FF3450 /* CaptureTool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* PacketMuncher */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9D0A012BC901600FF3450 /* CaptureTool */,
+				D8E9D09C12BC900D00FF3450 /* GUI */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = PacketMuncher;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D8B4B7E912C1C018007BE282 /* schema.sql */,
+				256AC3F00F4B6AF500CF3369 /* Sniffer_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* Sniffer-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				D8A2286012C6F23D0085FDDE /* SnifferWindowController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8E9D09C12BC900D00FF3450 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		D8E9D0A012BC901600FF3450 /* CaptureTool */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9D0A512BC904000FF3450 /* main.cpp */,
+				D8FECD8512BE9A0700AF375F /* VMBuffer.h */,
+				D8A2271E12C339AF0085FDDE /* Utils.h */,
+				D8A2271F12C339AF0085FDDE /* Utils.cpp */,
+			);
+			name = CaptureTool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Sniffer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Sniffer" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				ACA3208D12D5342D00DF2343 /* CopyFiles */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				ACA3200112D2D48200DF2343 /* CopyFiles */,
+				ACA3202D12D2D4FA00DF2343 /* CopyFiles */,
+				ACA3203812D2D77600DF2343 /* CopyFiles */,
+				D8E9D1F612BD5A2B00FF3450 /* CopyFiles */,
+				ACA3203B12D2DB2100DF2343 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8E9D1DB12BD59FB00FF3450 /* PBXTargetDependency */,
+			);
+			name = Sniffer;
+			productInstallPath = "$(HOME)/Applications";
+			productName = PacketMuncher;
+			productReference = 8D1107320486CEB800E47090 /* Sniffer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8E9D09512BC900400FF3450 /* CaptureTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8E9D09D12BC900D00FF3450 /* Build configuration list for PBXNativeTarget "CaptureTool" */;
+			buildPhases = (
+				D8E9D09312BC900400FF3450 /* Sources */,
+				D8E9D09412BC900400FF3450 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CaptureTool;
+			productName = Sniffer;
+			productReference = D8E9D09612BC900400FF3450 /* CaptureTool */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+				ORGANIZATIONNAME = "Alacatia Labs";
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Sniffer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* PacketMuncher */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Sniffer */,
+				D8E9D09512BC900400FF3450 /* CaptureTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				D8B4B7EA12C1C018007BE282 /* schema.sql in Resources */,
+				D8A2286112C6F23D0085FDDE /* SnifferWindowController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				D8A2275612C3BEA80085FDDE /* ChunkedBuffer.cpp in Sources */,
+				D8A2284212C6D7990085FDDE /* SnifferDocument.mm in Sources */,
+				D8A2285B12C6F0040085FDDE /* SnifferWindowController.mm in Sources */,
+				D8A2292512C716F40085FDDE /* SnifferCapture.mm in Sources */,
+				AC4A678A12D539ED0051B7B1 /* PrettyCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8E9D09312BC900400FF3450 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8E9D0A612BC904000FF3450 /* main.cpp in Sources */,
+				D8A2272012C339AF0085FDDE /* Utils.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8E9D1DB12BD59FB00FF3450 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8E9D09512BC900400FF3450 /* CaptureTool */;
+			targetProxy = D8E9D1DA12BD59FB00FF3450 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Sniffer_Prefix.pch;
+				INFOPLIST_FILE = "Sniffer-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Sniffer;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Sniffer_Prefix.pch;
+				INFOPLIST_FILE = "Sniffer-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Sniffer;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D8E9D09812BC900400FF3450 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = CaptureTool;
+			};
+			name = Debug;
+		};
+		D8E9D09912BC900400FF3450 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = Sniffer;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Sniffer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Sniffer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8E9D09D12BC900D00FF3450 /* Build configuration list for PBXNativeTarget "CaptureTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8E9D09812BC900400FF3450 /* Debug */,
+				D8E9D09912BC900400FF3450 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
